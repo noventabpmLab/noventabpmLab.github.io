@@ -1,0 +1,930 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+* a{
+	text-decoration: none;
+	
+}
+
+* a:hover{
+	text-decoration: none;
+	
+}
+
+body{
+	
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	background-color: rgba(0,0,0,1.00);
+	width: 100%;
+}
+
+row{
+	padding: 0;
+	margin: 0;
+	
+
+	}
+
+
+
+	li{
+		display: inline-block;
+	}
+
+	ul{
+		display: inline-block;
+		margin: 0;
+
+	}
+	nav{
+
+		max-width: 100%;
+
+	}
+
+	#bannerHome{
+		z-index: 1;
+	}
+
+	.container{
+		max-width: 100%;
+		display: flex;
+		background-color: rgba(0,0,0,1.00);
+		padding:0;
+		margin: 0;
+
+	}
+	.pl-1, .px-1{
+
+		padding: 0;
+
+	}
+	.btn{
+		padding: 0;
+
+	}
+
+	.containercol1{
+
+		padding-left: 0;
+
+	}
+	.btn-link{
+
+		color: #fff;
+		text-decoration: none;
+
+	}
+	.btn-link:focus{
+
+		color: #fff;
+		text-decoration: none;
+
+	}
+	.btn-link:hover{
+
+		color: #fff;
+		text-decoration: none;
+
+	}
+	.bg-dark{
+		background-color: #1a1a1a!important;
+	}
+
+	.logotipo{
+		padding: 0 20% 0 20%;
+	}
+	.logotipo li{
+		list-style-type: none;
+	}
+
+	.containercol2{
+		padding-top: 0;
+		padding-right:0;
+		width: 100%;
+
+	}
+	.dropdown-menu{
+		padding: 0;
+	}
+
+	.navbar-toggler{
+		margin: 0;
+		padding: 0;
+
+
+	}
+	.navbar-toggler:focus{
+		outline: none;
+
+	}
+
+	.nav-item{
+		text-transform: uppercase;
+
+	}
+	.nav-link{
+		color: #ffffff;
+
+	}
+	.card-header{
+		border: none;
+		background-color: rgba(0,0,0,1.00); 
+	}
+
+	.card{
+		border: none;
+	background-color: rgba(0,0,0,1.00); 
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+.ionoconsColor{
+	color: #ffffff;
+}
+
+.ionisizes{
+	font-size: 1rem;
+	
+}
+.ionisizesprice{
+	font-size: 10rem;
+	
+}
+
+.ionisizesprice:hover{
+	transform: scale(1.1);
+	
+}
+.carousel-caption a {
+	color:#fff;
+}
+
+.secHombre{
+	
+	background-image: url(../images/hombre_sec.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color:#fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform:uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+.secHombre h1{
+	padding:25%;	
+}
+.secMujer{
+	
+	background-image: url(../images/mujer_sec_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+.secMujer h1{
+	padding:25%
+}
+.secOutlet{
+	
+	background-image: url(../images/frameOne_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+.secOutlet h1{
+	padding:25%
+}
+
+.secNew1{
+	
+	background-image: url(../images/primal234234_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+.secNew1 h1{
+	padding:25%
+}
+
+.secNewsume{
+	
+	background-image: url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+.secNewsume h1{
+	padding:25%
+}
+
+.secPrimalprod {	
+	background-image:url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 50%;
+	position: relative;
+}
+
+.secPrimalprod h1{
+	padding-top:20%;
+}
+
+
+.Secrolling {	
+	background-image: url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.Secrolling h1{
+	padding-top:25%;
+}
+
+.secsummerprod {	
+	background-image:url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 50%;
+	position: relative;
+}
+
+.secummerprod h1{
+	padding-top:20%;
+}
+
+.secrollingprod {	
+	background-image:url(../images/busobuso2s2_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100px;
+	min-width: 100px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 50%;
+	position: relative;
+}
+
+.secrollingprod h1{
+	padding-top:20%;
+}
+.JacketMen {	
+	background-image:url("../images/MenSecimg2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.JacketMen h1{
+	
+	padding-top: 20%;
+}
+.JacketMen1 {	
+	background-image:url("../images/chaquetas1_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.JacketMen1 h1{
+	
+	padding-top: 20%;
+}
+
+.busoMen {	
+	background-image:url("../images/busoBuso_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.busoMen h1{
+	
+	padding-top: 20%;
+}
+
+
+.sudaMen {	
+	background-image: url("../images/busobuso2s2_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+.AccesoMen {	
+	background-image:url(../images/banner1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.AccesoMen h1{
+	
+	padding-top: 20%;
+}
+
+
+.JacketwMen {	
+	background-image:url("../images/mujer1_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.JacketwMen h1{
+	
+	padding-top: 20%;
+}
+.JacketwMen1 {	
+	background-image:url("../images/chica_redFrame_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 300px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.JacketwMen1 h1{
+	
+	padding-top: 20%;
+}
+
+.busowMen {	
+	background-image:url("../images/mujer2_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.busowMen h1{
+	
+	padding-top: 20%;
+}
+
+
+.sudawMen {	
+	background-image: url("../images/mujer_sec_Mesa de trabajo 1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+.AccesowMen {	
+	background-image:url("../images/maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 400px;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	text-shadow: 1px 1px 2px black;
+}
+
+.AccesowMen h1{
+	
+	padding-top: 20%;
+}
+.barraNav{
+	max-height: 100%;
+	
+	position: fixed;
+	z-index: 10000;
+	
+}
+
+.centrar{
+	left: 20%
+}
+#bannerH{
+	
+}
+#bannerM{
+	display: none;
+}
+
+
+ 
+#accordionExample{
+	
+	text-align-last: center;
+	
+
+}
+.accordion{
+	text-align-last: center;
+	padding: 0px 10% 0 10% ;
+	
+	}
+
+#bannerHome{
+	z-index: 1;
+}
+#contPal {
+    margin: auto;
+    width: 100%;
+	max-width: 1920px;
+}
+
+
+
+
+#hombres,#mujeres{
+	cursor: pointer;
+}
+
+
+#mujeres img{
+	top: -10px;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	}
+
+#hombres img {
+	display: none;
+	top: -10px;
+	left: 0;
+	width: 100%
+}
+#menuPal{
+	z-index: 10000;
+}
+
+
+.menutab{
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	width: 102%;
+	margin: auto;
+	padding: 0;
+	right: 0;
+	
+}
+.seccion{
+	width: 49.5%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#contenido {
+    width: 100%;
+}
+#bannerHome {
+}
+.separados{
+	padding-top:10%;
+}
+
+.maleicon{
+	color: #7E94FF;
+}
+
+.femaleicon{
+	color: #F86CEE;
+		
+}
+
+h1:hover{
+	transform: scale(1.2);
+}
+
+.secImagen{
+	max-height: 400px;
+	min-width: 100%;
+	object-fit: cover;
+	background-repeat: none;
+
+}
+.captop{
+	padding-top:50px;
+}
+
+.secHombreYmujer{
+	
+}
+
+.modal-body{
+	
+	padding-top: 20px;
+	z-index: 10000;
+	
+	
+}
+.modal{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	transform: scale(1.2);
+	z-index: 500000;
+	
+}
+.navUlbar{
+	padding-top: 2%;
+	padding-left: 25%;
+	max-width:100%;
+	position:fixed;
+	z-index: 100000000;
+	display:block;
+
+}
+
+.detalle{
+	top:50%;
+	position:absolute;
+	z-index: 500000;
+	
+}
+
+
+
+
+
+
+
+/*-- Extra small devices portrait phones less than 576px--*/
+@media (max-width: 575.98px) {
+	
+	.contpal{
+		padding: 0 ;
+		
+	}
+	
+	
+	
+	.barraNav{
+	min-width: 100%;
+}
+	
+	.ionisizes{
+		font-size: .9rem;
+		
+		
+	}
+	
+	
+	body{
+	
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 0!important;
+	background-color: rgba(0,0,0,1.00);
+	padding: 0 0 0 0 !important;
+		
+}
+	
+	.menutab{
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	width: 102%;
+	padding-top:60px;
+	right: 0;
+	
+	}
+	
+	
+	
+	h1{
+		padding-bottom: 5%;
+		color: #fff;
+		font-size: 3rem;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px black; 
+	}	
+	
+	}
+	h1.hover{
+		text-decoration: none;
+	}
+	.contpal{
+		padding: 0%;
+	}
+
+ /*ll devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.barraNav{
+	min-width: 100%;
+}
+	.menutab{
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	width: 102%;
+	padding-top:80px;
+	right: 0;
+		}
+
+
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 700px) and (max-width: 991.98px) {
+	
+	h6{
+		font-zise: 10rem;
+		padding: 0 10% 0 10%;
+	}
+	
+
+	
+	.barraNav{
+	min-width: 100%;
+}
+	.menutab{
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	width: 102%;
+	padding-top:80px;
+	right: 0;
+		}
+	
+	
+	
+	#accordionExample{
+	text-align: center;
+		
+		
+}
+	
+.accordion{
+	text-align-last: center;
+	padding: 0px 10% 0 10% ;
+	
+	}
+	
+	h1{
+		padding-bottom: 10%;
+		color: #fff;
+		font-size: 5rem;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px black;
+	}
+	h1.hover{
+		text-decoration: none;
+		
+		
+	}
+	a
+	{
+		color:white;
+	}
+	a.hover
+	{
+		color:white;
+		font-size: 20rem;
+	}
+
+
+}
+	
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 930px) and (max-width: 1199.98px) {
+	
+	.AccesoMen{
+		
+		min-height: 600px;
+		
+	}
+	#accordionExample{
+	
+		text-align-last: center;
+
+	}
+	.barraNav{
+	min-width: 100%;
+}
+	.menutab{
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	width: 102%;
+	padding-top:80px;
+	right: 0;
+		}
+	.accordion{
+		padding: 0px 5% 0 10% ;
+		text-align-last: center;
+	}
+	
+	
+
+	h1{
+		padding-bottom: 20%;
+		color: #fff;
+		font-size: 5rem;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px black; 
+	}
+	h1.hover{
+		
+		text-decoration: none;
+
+	}
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+	.AccesoMen{
+		
+		min-height: 800px;
+		
+	}
+	
+	.carritoicon{
+		padding-top:0;
+		margin:0;
+	}
+	.navbar-toggler{
+	
+	padding-left: 10%;
+	
+	
+}
+	.barraNav{
+	min-width: 100%;
+	padding:auto;
+}
+	.menutab{
+	background-color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
+	width: 102%;
+	padding-top:80px;
+	right: 0;
+		}
+	
+	.ionisizes{
+		font-size:1.8rem;
+	}
+	
+	#accordionExample{
+	
+	text-align-last: center;
+
+}
+.accordion{
+	padding: 0px 4% 0 16% ;
+	text-align-last: center;
+	}
+	
+	h1{
+		padding-bottom: 20%;
+		color: #fff;
+		font-size: 8rem;
+		text-decoration: none;
+	}
+	h1.hover{
+		
+		text-decoration: none;
+
+	}
+	
+}
+
+
