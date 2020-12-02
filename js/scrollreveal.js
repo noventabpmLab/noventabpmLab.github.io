@@ -60,14 +60,14 @@ window.sr = ScrollReveal();
     sr.reveal('.JacketMen', {
 
         duration: 3000,
-        origin: 'rigth',
-        distance: '1400px',
+        origin: 'left',
+        distance: '400px',
 
     }); 
 
     sr.reveal('.JacketMen1', {
 
-        duration: 3000,
+        duration: 2000,
         origin: 'left',
         distance: '400px',
 
