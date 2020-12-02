@@ -84,18 +84,20 @@
 							 
 							  <li>
 								  <!-- Button trigger modal -->
-								  <div class=" dropleft px-lg-4 px-sm-2">
-									<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
-										
-										<ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>
-										
-										
-									</button>
+								  <div class=" px-lg-4 px-sm-2">
+										<button type="button" class="btn" data-toggle="modal" data-target="#login">
+											
+											<ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>
+											
+											
+										</button>
 									  
-									  </div>
+									</div>
+
+									
 
 									<!-- Modal -->
-									<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<!--<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
 									  <div class="modal-dialog modal-dialog-centered py-1" role="document">
 										<div class="modal-content ">
 										  
@@ -119,12 +121,38 @@
 										</div>
 									  </div>
 									</div>
-								   
+								   -->
 							  
 							  </li>
 						  </ul>
 					  </div>
 				  </div>
+
+				  <!-- Modal -->
+					<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered py-1" role="document">
+						<div class="modal-content ">
+						
+						<div class="modal-body p-3">
+							<div class="input"></div>
+							<input type="email" class="form-control text-center py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="login">
+							<br>
+							<input type="email" class="form-control text-center py-2" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="password">
+						</div>
+						<div class="pb-3">
+							<button type="button" class="btn btn-dark py-1 px-5">Log in</button>
+							
+							<br>
+							
+							<button type="button" class="btn btn-secondary py-1 px-2 my-1" data-dismiss="modal">cancel</button>
+							
+						</div>
+							<div class="footer pb-4 bg-dark">
+								<a href=""><small >forgot password?</small></a>
+							</div>
+						</div>
+					</div>
+					</div>
 			  </div>
 		  </nav>
 	  </header>

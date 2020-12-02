@@ -653,15 +653,16 @@ h1:hover{
 .modal-body{
 	
 	padding-top: 20px;
-	z-index: 10000;
+	
 	
 	
 }
 .modal{
-	padding-top: 80px;
-	padding-bottom: 80px;
-	transform: scale(1.2);
-	z-index: 500000;
+	height: 100%;
+	padding-top: 10%;
+	padding-bottom: 20%;
+	transform: scale(1.1);
+	
 	
 }
 .navUlbar{
@@ -669,7 +670,7 @@ h1:hover{
 	padding-left: 25%;
 	max-width:100%;
 	position:fixed;
-	z-index: 100000000;
+	
 	display:block;
 
 }
@@ -677,8 +678,13 @@ h1:hover{
 .detalle{
 	top:50%;
 	position:absolute;
-	z-index: 500000;
+
 	
+}
+
+.modaltamaño{
+
+	min-width: 400px;
 }
 
 
