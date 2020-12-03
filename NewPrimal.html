@@ -230,38 +230,45 @@
 	  <section class="secHombreYmujer">
 		
 		<div class="container row">
-			
-			<div  class=" col-md-6 col-lg-6 secPrimalprod">
-								<!-- Button trigger modal -->
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter2">
-					<ion-icon class="ionisizesprice" name="pricetag-outline"></ion-icon>
-				</button>
-				
-				<!-- Modal -->
-				<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="shopping-cart-items shoppingCartItemsContainer">
+                
+            </div>
+
+			<!-- chaquetas -->
+			<section class="col-md-12 col-lg-12 " id="chaquetas1">
+				<div  class="secPrimalprod">
+					<button type="button" class="btn" data-toggle="modal" data-target="#chaquetas">
+						<a class="detalle" href="#"><ion-icon class="ionisizesprice" name="pricetag-outline"></ion-icon></a>
+					</button>
+				</div>
+			</section>
+			<!-- chaquetas modal -->
+			<div class="modal fade" id="chaquetas" tabindex="-1" role="dialog" aria-labelledby="chaquetasTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered shopping-cart" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">chaqueta antifluido</h5>
+						<h5 class="modal-title" id="chaquetasTitle">chaqueta antifluido</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 						</div>
 						<div class="modal-body">
-							<div class="card" style="width: 18rem;">
-								<img class="card-img-top" src="images/chaqueta-snowboard-quiksilver-mission-block-nino.jpg" alt="Card image cap">
-								<div class="card-body">
-								  <h5 class="card-title">detalle Producto</h5>
-								  <p class="card-text">chaqueta deportiva antifluido </p>
-								  <a href="#" class="btn btn-primary">añadir a carrito</a>
+
+							<div class=" pb-1 pb-md-0">
+								<div class="card item">
+								  <img class="card-img-top" src="images/chaquetamen.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">Chaqueta antifluidos</h5>
+									<p class="card-text">$ <span style="color:black; font-size: 20px" class="itemPrice">150000</span> Col$</p>
+									<a href="#" class="btn btn-dark addToCart">Add to Cart</a>
+								  </div>
 								</div>
 							  </div>
+
 						</div>
 						<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
-						<button type="button" class="btn btn-primary">Comprar</button>
+						
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>

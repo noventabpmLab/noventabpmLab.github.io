@@ -261,17 +261,18 @@ row{
 }
 
 .secPrimalprod {	
-	background-image:url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-image:url(../images/primal234234_Mesa\ de\ trabajo\ 1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 400px;
+	min-height: 800px;
 	color: #fff;
 	font-size: 1rem;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 50%;
+	padding: 10px;
 	position: relative;
+	text-shadow: 1px 1px 2px black;
 }
 
 .secPrimalprod h1{
@@ -280,11 +281,11 @@ row{
 
 
 .Secrolling {	
-	background-image: url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-image:url(../images/primal234234_Mesa\ de\ trabajo\ 1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 400px;
+	min-height: 800px;
 	color: #fff;
 	font-size: 1rem;
 	text-align: center;
@@ -299,17 +300,18 @@ row{
 }
 
 .secsummerprod {	
-	background-image:url(../images/primal1_Mesa\ de\ trabajo\ 1.jpg);
+	background-image:url(../images/primal234234_Mesa\ de\ trabajo\ 1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 400px;
+	min-height: 800px;
 	color: #fff;
 	font-size: 1rem;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 50%;
+	padding: 10px;
 	position: relative;
+	text-shadow: 1px 1px 2px black;
 }
 
 .secummerprod h1{
@@ -317,18 +319,18 @@ row{
 }
 
 .secrollingprod {	
-	background-image:url(../images/busobuso2s2_Mesa\ de\ trabajo\ 1.jpg);
-	background-repeat: repeat;
+	background-image:url(../images/primal234234_Mesa\ de\ trabajo\ 1.jpg);
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 100px;
-	min-width: 100px;
+	min-height: 800px;
 	color: #fff;
 	font-size: 1rem;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 50%;
+	padding: 10px;
 	position: relative;
+	text-shadow: 1px 1px 2px black;
 }
 
 .secrollingprod h1{
