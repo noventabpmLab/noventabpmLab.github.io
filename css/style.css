@@ -661,7 +661,7 @@ h1:hover{
 	height: 100%;
 	padding-top: 10%;
 	padding-bottom: 20%;
-	transform: scale(1.1);
+	transform: scale(1.3);
 	
 	
 }
@@ -684,7 +684,39 @@ h1:hover{
 
 .modaltamaño{
 
-	min-width: 400px;
+	min-width: 600px;
+}
+
+
+.carritocolum1{
+
+	background-color: white;
+	min-height: 400px;
+	color: white;
+	position: relative;
+}
+.carritocolum2{
+
+	background-color: white;
+	min-height: 400px;
+	color:white;
+	position: relative;
+}
+.carritocolum1 h2{
+
+	color:black;
+	top:50%;
+}
+
+.carritocolum2 h2{
+
+	color:black;
+	top:50%;
+}
+
+.maintienda{
+
+	padding: 100px 0 0 0 ;
 }
 
 
