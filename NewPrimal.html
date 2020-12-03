@@ -18,118 +18,205 @@
 	
   <body>
 	  
-	  <header class="contpal p-0">
-		  <nav class="barraNav  bg-dark">
-			  <div class="row  container ">
-				  <div class="col-sm-4 col-4" id="col1">
-					  <!--BOTON MENU-->
-					  
-					  <div class="containercol1 py-3 ">
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							  <ion-icon class="ionisizes ionoconsColor" name="menu-outline"></ion-icon>
-						  </button>
+	<header class="contpal p-0">
+		<nav class="barraNav  bg-dark">
+			<div class="row  container ">
+			   
+		
+							<!-- The Modal -->
+							<div class="modal" id="myModal">
+							  <div class="modal-dialog">
+								<div class="modal-content">
+		
+								  <!-- Modal Header -->
+								  <div class="modal-header">
+									<h4 class="modal-title">Login</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								  </div>
+		
+								  <!-- Modal body -->
+								  <div class="modal-body">
+									<input type="text" id="usuario"><br>
+									<input type="password" id="password"><br>
+									<button class="btn btn-danger" onClick="entrar()">Ingresar</button>  
+								  </div>
+		
+								  <!-- Modal footer -->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								  </div>
+		
+								</div>
+							  </div>
+							</div>
+							  <div class="modal" id="myModal1">
+								  <div class="modal-dialog">
+						<div class="modal-content" style="width: 800px;">
+		
+			  <!-- Modal Header -->
+			  <div class="modal-header">
+				<h4 class="modal-title">Carrito de la compra</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+		
+			  <!-- Modal body -->
+			  <div class="modal-body">
+			  <section class="shopping-cart" style=" width: 98%; margin: auto">
+				  <div class="container">
+					  <div class="shopping-cart-items shoppingCartItemsContainer">
+						  
 					  </div>
-					   <!-- secc hombre mujer -->
-					  <div class="containercol1 py-1">
-						  <div class="collapse navbar-collapse px-1 " id="navbarSupportedContent">
-							  <ul class="navbar-nav mr-auto justify-content-between">
-								  <li class="nav-item pb-0">
-									  <a class="nav-link" href="Hombres.html">hombre</a>
-								  </li>
-								  <li class="nav-item pb-2">
-									  <a class="nav-link" href="Mujeres.html">mujer</a>
-								  </li>
-								</ul>
+					  <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+						  aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered">
+							  <div class="modal-content">
+								  <div class="modal-header">
+									  <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										  <span aria-hidden="true">&times;</span>
+									  </button>
+								  </div>
+								  <div class="modal-body">
+									  <p>Pronto recibirá su pedido</p>
+								  </div>
+								  <div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								  </div>
+							  </div>
 						  </div>
 					  </div>
-				  </div>
-				  
-				   <!-- logo centro -->
-				  <div class="col-sm-4 col-4 py-3  ">
-					  
-					  <div class="logotipo text-center " id="col2">
-						  <li>
-							  <a  href="New.html">
-								  <img class=" img-fluid" src="Images/logobitono.png" alt="">
-							  </a>
-						  </li>
-					  </div>	
-				  
-				  </div>
-				  
-				   <!-- iconos barra nav -->
-				  <div class="col-sm-4 col-4 py-3 justify-content-center" id="col3" >
-					  <div class="text-center">
-						  <ul>
-							  
-							  <li>
-								  <!-- Default dropleft button -->
-									<div class=" dropleft px-lg-4 px-sm-2">
-									  <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<ion-icon class="ionisizes ionoconsColor" name="search-outline"></ion-icon>
-									  </button>
-									  <div class="dropdown-menu ">
-										<!-- Dropdown menu links -->
-												<input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Buscar">
-									  </div>
-									</div>
-							  </li>
-							  <li>
-								  <!-- Default dropleft button -->
-									<div class=" dropleft px-lg-4 px-sm-2">
-									  <button  class="btn">
-										  <ion-icon class="ionisizes ionoconsColor" name="cart-outline"></ion-icon>
-										
-									  </button>
-									</div>
-							  </li>
-							 
-							  <li>
-								  <!-- Button trigger modal -->
-								  <div class=" dropleft px-lg-4 px-sm-2">
-									<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
-										
-										<ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>
-										
-										
-									</button>
-									  
-									  </div>
+					</div>
+			  </section>
+			  </div>
+			  <!-- Modal footer -->
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			  </div>
+		
+						</div>
+					</div>
+							</div>
 
-									<!-- Modal -->
-									<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-									  <div class="modal-dialog modal-dialog-centered py-1" role="document">
-										<div class="modal-content ">
-										  
-										  <div class="modal-body p-3">
-											<div class="input"></div>
-											  <input type="email" class="form-control text-center py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="login">
-											  <br>
-											  <input type="email" class="form-control text-center py-2" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="password">
-										  </div>
-										  <div class="pb-3">
-											<button type="button" class="btn btn-dark py-1 px-5">Log in</button>
-											  
-											  <br>
-											  
-											<button type="button" class="btn btn-secondary py-1 px-2 my-1" data-dismiss="modal">cancel</button>
-											
-										  </div>
-											<div class="footer pb-4 bg-dark">
-												<a href=""><small >forgot password?</small></a>
-											</div>
-										</div>
-									  </div>
+
+
+
+
+				<div class="col-sm-4 col-4" id="col1">
+					<!--BOTON MENU-->
+					
+					<div class="containercol1 py-3 ">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<ion-icon class="ionisizes ionoconsColor" name="menu-outline"></ion-icon>
+						</button>
+					</div>
+					 <!-- secc hombre mujer -->
+					<div class="containercol1 py-1">
+						<div class="collapse navbar-collapse px-1 " id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto justify-content-between">
+								<li class="nav-item pb-0">
+									<a class="nav-link" href="hombre.html">hombre</a>
+								</li>
+								<li class="nav-item pb-2">
+									<a class="nav-link" href="mujer.html">mujer</a>
+								</li>
+							  </ul>
+						</div>
+					</div>
+				</div>
+				
+				 <!-- logo centro -->
+				<div class="col-sm-4 col-4 py-3  ">
+					
+					<div class="logotipo text-center " id="col2">
+						<li>
+							<a  href="index.html">
+								<img class=" img-fluid" src="images/logobitono.png" alt="">
+							</a>
+						</li>
+					</div>	
+				
+				</div>
+				
+				 <!-- iconos barra nav -->
+				<div class="col-sm-4 col-4 py-3 justify-content-center" id="col3" >
+					<div class="text-center">
+						<ul>
+							<li>
+								<!-- Default dropleft button -->
+								  <div class=" dropleft px-lg-4 px-sm-2">
+									<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									  <ion-icon class="ionisizes ionoconsColor" name="search-outline"></ion-icon>
+									</button>
+									<div class="dropdown-menu ">
+									  <!-- Dropdown menu links -->
+											  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Buscar">
 									</div>
-								   
-							  
-							  </li>
-						  </ul>
+								  </div>
+							</li>
+							<li>
+								<!-- Default dropleft button -->
+								  <div class=" px-sm-2">
+
+									  <button type="button" class="btn" data-toggle="modal" data-target="#myModal1">
+										  <ion-icon class="ionisizes ionoconsColor" name="cart-outline"></ion-icon>
+										</button>								
+								  </div>
+							</li>
+						   
+							<li>
+								<!-- Button trigger modal -->
+								<div class=" px-sm-2">
+									  <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+										  <ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>
+									  </button>
+								  </div>
+							</li>
+						</ul>
+					</div>
+				</div>  
+			</div>
+		</nav>
+		 <!--carrito-->
+		 <div class="modal fade" id="carrito" tabindex="-1" role="dialog" aria-labelledby="carritoTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog" role="document">
+			  <div class="modal-content">
+				  <div class="modal-header">
+				  <h5 class="modal-title text-center" id="carritoTitle">cesta</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+				  </button>
+				  </div>
+				  <div class="modal-body">
+					  <h5>productos</h5>
+					  <div>
 					  </div>
 				  </div>
+				  <div class="modal-footer">
+					  <h2>footer</h2>
+				  </div>
 			  </div>
-		  </nav>
-	  </header>
+		  </div>
+	  </div>
+
+	  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog" role="document">
+			  <div class="modal-content">
+				  <div class="modal-header">
+				  <h5 class="modal-title" id="loginTitle">Login</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+				  </button>
+				  </div>
+				  <div class="modal-body">
+					  <h2>contenido</h2>
+				  </div>
+				  <div class="modal-footer">
+					  <h2>footer</h2>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	</header>
 	  <div>
 	  </div>
 	  
