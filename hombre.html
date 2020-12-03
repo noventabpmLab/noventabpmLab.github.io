@@ -21,6 +21,86 @@
 	<header class="contpal p-0">
 		<nav class="barraNav  bg-dark">
 			<div class="row  container ">
+			   
+		
+							<!-- The Modal -->
+							<div class="modal" id="myModal">
+							  <div class="modal-dialog">
+								<div class="modal-content">
+		
+								  <!-- Modal Header -->
+								  <div class="modal-header">
+									<h4 class="modal-title">Login</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								  </div>
+		
+								  <!-- Modal body -->
+								  <div class="modal-body">
+									<input type="text" id="usuario"><br>
+									<input type="password" id="password"><br>
+									<button class="btn btn-danger" onClick="entrar()">Ingresar</button>  
+								  </div>
+		
+								  <!-- Modal footer -->
+								  <div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								  </div>
+		
+								</div>
+							  </div>
+							</div>
+							  <div class="modal" id="myModal1">
+								  <div class="modal-dialog">
+						<div class="modal-content" style="width: 800px;">
+		
+			  <!-- Modal Header -->
+			  <div class="modal-header">
+				<h4 class="modal-title">Carrito de la compra</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+		
+			  <!-- Modal body -->
+			  <div class="modal-body">
+			  <section class="shopping-cart" style=" width: 98%; margin: auto">
+				  <div class="container">
+					  <div class="shopping-cart-items shoppingCartItemsContainer">
+						  
+					  </div>
+					  <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+						  aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered">
+							  <div class="modal-content">
+								  <div class="modal-header">
+									  <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										  <span aria-hidden="true">&times;</span>
+									  </button>
+								  </div>
+								  <div class="modal-body">
+									  <p>Pronto recibirá su pedido</p>
+								  </div>
+								  <div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								  </div>
+							  </div>
+						  </div>
+					  </div>
+					</div>
+			  </section>
+			  </div>
+			  <!-- Modal footer -->
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			  </div>
+		
+						</div>
+					</div>
+							</div>
+
+
+
+
+
 				<div class="col-sm-4 col-4" id="col1">
 					<!--BOTON MENU-->
 					
@@ -76,21 +156,19 @@
 							<li>
 								<!-- Default dropleft button -->
 								  <div class=" px-sm-2">
-									  <button type="button" class="btn" data-toggle="modal" data-target="#carrito">
-										  
+
+									  <button type="button" class="btn" data-toggle="modal" data-target="#myModal1">
 										  <ion-icon class="ionisizes ionoconsColor" name="cart-outline"></ion-icon>
-										  
-										  
-									  </button>									
+										</button>								
 								  </div>
 							</li>
 						   
 							<li>
 								<!-- Button trigger modal -->
 								<div class=" px-sm-2">
-									  <button type="button" class="btn" data-toggle="modal" data-target="#login">	
-										  <ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>	
-									  </button>  
+									  <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+										  <ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>
+									  </button>
 								  </div>
 							</li>
 						</ul>
@@ -167,19 +245,21 @@
 						</button>
 						</div>
 						<div class="modal-body">
-							<div class="card" style="width: 18rem;">
-								<img class="card-img-top" src="images/chaqueta-snowboard-quiksilver-mission-block-nino.jpg" alt="Card image cap">
-								<div class="card-body">
-								<h5 class="card-title">detalle Producto</h5>
-								<p class="card-text">chaqueta deportiva antifluido </p>
-								<p class="card-text ">$ <span style="color:white; font-size: 20px" class="itemPrice">50000</span> Col$</p>
-								<a href="#" class="btn btn-primary addToCart">añadir a carrito</a>
+
+							<div class=" pb-1 pb-md-0">
+								<div class="card item">
+								  <img class="card-img-top" src="images/chaquetamen.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">Chaqueta antifluidos</h5>
+									<p class="card-text">$ <span style="color:black; font-size: 20px" class="itemPrice">150000</span> Col$</p>
+									<a href="#" class="btn btn-dark addToCart">Add to Cart</a>
+								  </div>
 								</div>
-							</div>
+							  </div>
+
 						</div>
 						<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
-						<button type="button" class="btn btn-primary">Comprar</button>
+						
 						</div>
 					</div>
 				</div>
@@ -198,21 +278,22 @@
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-						<h5 class="modal-title" id="busosTitle">chaqueta antifluido</h5>
+						<h5 class="modal-title" id="busosTitle">kaotico sweater</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 						</div>
 						<div class="modal-body">
-							<div class="card" style="width: 18rem;">
-								<img class="card-img-top" src="images/chaqueta-snowboard-quiksilver-mission-block-nino.jpg" alt="Card image cap">
-								<div class="card-body">
-								<h5 class="card-title">detalle Producto</h5>
-								<p class="card-text">chaqueta deportiva antifluido </p>
-								<p class="card-text ">$ <span style="color:white; font-size: 20px" class="itemPrice">50000</span> Col$</p>
-								<a href="#" class="btn btn-primary">añadir a carrito</a>
+							<div class=" pb-1 pb-md-0">
+								<div class="card item">
+								  <img class="card-img-top" src="images/busomen.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">kaotico sweater </h5>
+									<p class="card-text">$ <span style="color:black; font-size: 20px" class="itemPrice">50000</span> Col$</p>
+									<a href="#" class="btn btn-dark addToCart">Add to Cart</a>
+								  </div>
 								</div>
-							</div>
+							  </div>
 						</div>
 						<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
@@ -223,33 +304,34 @@
 			</div>
 			
 			<!--sudaderas-->
-			<section class=" col-md-12 col-lg-12 " id="sudaderas">
+			<section class=" col-md-12 col-lg-12 " id="sudaderas1">
 				<div  class="sudaMen">
-					<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter5">
+					<button type="button" class="btn" data-toggle="modal" data-target="#sudaderas">
 						<a class="detalle" href="#"><ion-icon class="ionisizesprice" name="pricetag-outline"></ion-icon></a>
 					</button>
 				</div>
 			</section>
 			<!--sudaderas modal-->
-			<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal fade" id="sudaderas" tabindex="-1" role="dialog" aria-labelledby="sudaderasTitle" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">chaqueta antifluido</h5>
+						<h5 class="modal-title" id="sudaderasTitle">kaotico sudadera</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 						</div>
 						<div class="modal-body">
-							<div class="card" style="width: 18rem;">
-								<img class="card-img-top" src="images/chaqueta-snowboard-quiksilver-mission-block-nino.jpg" alt="Card image cap">
-								<div class="card-body">
-								<h5 class="card-title">detalle Producto</h5>
-								<p class="card-text">chaqueta deportiva antifluido </p>
-								<p class="card-text ">$ <span style="color:white; font-size: 20px" class="itemPrice">50000</span> Col$</p>
-								<a href="#" class="btn btn-primary">añadir a carrito</a>
+							<div class=" pb-1 pb-md-0">
+								<div class="card item">
+								  <img class="card-img-top" src="images/sudaderamen.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">kaotico sudadera</h5>
+									<p class="card-text">$ <span style="color:black; font-size: 20px" class="itemPrice">80000</span> Col$</p>
+									<a href="#" class="btn btn-dark addToCart">Add to Cart</a>
+								  </div>
 								</div>
-							</div>
+							  </div>
 						</div>
 						<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
@@ -260,33 +342,34 @@
 			</div>
 
 			<!-- accsesorios-->
-			<section class="col-md-12 col-lg-12" id="accsesorios">
+			<section class="col-md-12 col-lg-12" id="accsesorios1">
 				<div  class="AccesoMen">
-					<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter5">
+					<button type="button" class="btn" data-toggle="modal" data-target="#accsesorios">
 						<a class="detalle" href="#"><ion-icon class="ionisizesprice" name="pricetag-outline"></ion-icon></a>
 					</button>
 				</div>
 			</section>
 			<!-- accsesorios modal-->
-			<div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal fade" id="accsesorios" tabindex="-1" role="dialog" aria-labelledby="accsesoriosTitle" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">chaqueta antifluido</h5>
+						<h5 class="modal-title" id="accsesoriosTitle">Accsesorios</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 						</div>
 						<div class="modal-body">
-							<div class="card" style="width: 18rem;">
-								<img class="card-img-top" src="images/chaqueta-snowboard-quiksilver-mission-block-nino.jpg" alt="Card image cap">
-								<div class="card-body">
-								<h5 class="card-title">detalle Producto</h5>
-								<p class="card-text">chaqueta deportiva antifluido </p>
-								<p class="card-text ">$ <span style="color:white; font-size: 20px" class="itemPrice">50000</span> Col$</p>
-								<a href="#" class="btn btn-primary">añadir a carrito</a>
+							<div class=" pb-1 pb-md-0">
+								<div class="card item">
+								  <img class="card-img-top" src="images/accsesomen.jpg" alt="Card image cap">
+								  <div class="card-body">
+									<h5 class="card-title">Accsesorios</h5>
+									<p class="card-text">$ <span style="color:black; font-size: 20px" class="itemPrice">15000</span> Col$</p>
+									<a href="#" class="btn btn-dark addToCart">Add to Cart</a>
+								  </div>
 								</div>
-							</div>
+							  </div>
 						</div>
 						<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>

@@ -19,6 +19,86 @@
 	  <header class="contpal p-0">
 		  <nav class="barraNav  bg-dark">
 			  <div class="row  container ">
+				 
+		  
+							  <!-- The Modal -->
+							  <div class="modal" id="myModal">
+								<div class="modal-dialog">
+								  <div class="modal-content">
+		  
+									<!-- Modal Header -->
+									<div class="modal-header">
+									  <h4 class="modal-title">Login</h4>
+									  <button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+		  
+									<!-- Modal body -->
+									<div class="modal-body">
+									  <input type="text" id="usuario"><br>
+									  <input type="password" id="password"><br>
+									  <button class="btn btn-danger" onClick="entrar()">Ingresar</button>  
+									</div>
+		  
+									<!-- Modal footer -->
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+									</div>
+		  
+								  </div>
+								</div>
+							  </div>
+								<div class="modal" id="myModal1">
+									<div class="modal-dialog">
+						  <div class="modal-content" style="width: 800px;">
+		  
+				<!-- Modal Header -->
+				<div class="modal-header">
+				  <h4 class="modal-title">Carrito de la compra</h4>
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+		  
+				<!-- Modal body -->
+				<div class="modal-body">
+				<section class="shopping-cart" style=" width: 98%; margin: auto">
+					<div class="container">
+						<div class="shopping-cart-items shoppingCartItemsContainer">
+							
+						</div>
+						<div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<p>Pronto recibirá su pedido</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					  </div>
+				</section>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+		  
+						  </div>
+					  </div>
+							  </div>
+
+
+
+
+
 				  <div class="col-sm-4 col-4" id="col1">
 					  <!--BOTON MENU-->
 					  
@@ -74,21 +154,19 @@
 							  <li>
 								  <!-- Default dropleft button -->
 									<div class=" px-sm-2">
-										<button type="button" class="btn" data-toggle="modal" data-target="#carrito">
-											
+
+										<button type="button" class="btn" data-toggle="modal" data-target="#myModal1">
 											<ion-icon class="ionisizes ionoconsColor" name="cart-outline"></ion-icon>
-											
-											
-										</button>									
+										  </button>								
 									</div>
 							  </li>
 							 
 							  <li>
 								  <!-- Button trigger modal -->
 								  <div class=" px-sm-2">
-										<button type="button" class="btn" data-toggle="modal" data-target="#login">	
-											<ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>	
-										</button>  
+										<button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+											<ion-icon class="ionisizes ionoconsColor" name="person-outline"></ion-icon>
+										</button>
 									</div>
 							  </li>
 						  </ul>
@@ -258,7 +336,7 @@
 					<p class="ionoconsColor " href="#"><ion-icon class="px-2 ionoconsColor " name="call-outline"></ion-icon> 224 - 91 39 </p> 
 					<small class="text-muted ">de lunes a viernes de  de 0:09 a 18:00</small> <br>
 				    
-						<div>
+					<div>
 						<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong">
 							<a class="ionoconsColor " href="#">
 								<ion-icon class="px-2 ionoconsColor " name="mail-outline">
@@ -330,183 +408,35 @@
 						  </div>
 						</div>
 					</div>
-						
-						
-						 <br>
+					<br>
 					<small class="text-muted ">responderemos lo antes posible</small>
 				</div>
-				
-				
-				
-				
+
 				<div class="col-sm-12 col-lg-4 col-md-6 text-center pt-5">
 					<h6 class="ionoconsColor lead">Sobre bitono</h6> <br>
+
 					<!-- Button trigger modal -->
 					<div>
-						<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong5">
+						<button type="button" class="btn" data-toggle="modal" data-target="#who">
 						  <a class="ionoconsColor " href="#"><small class="lead">Quienes somos</small></a> <br>
 						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle4" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLongTitle4">BITONO</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true">&times;</span>
-								</button>
-							  </div>
-							  <div class="modal-body">
-								<h2>Somos Bitono</h2>
-									<p> Empresa de manufactura para prendas deportivas, el resultado de combinar la habilidad con las 
-									artes textiles, la pasion por el deporte y la buena moda.
-
-									Sabemos como refrescar el ritmo que llevas  a dirario, y que no paras por nada, por eso te damos los mejores colores en la mejor calidad  y  diseño de prendas.
-									</p>
-								  <h5>para alguien que vive cada segundo al limite.</h5>
-							  </div>
-							  <div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								
-							  </div>
-							</div>
-						  </div>
-						</div>
 					</div>
-					
+					<!-- Button trigger modal -->
 					<div>
-						<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong1">
+						<button type="button" class="btn" data-toggle="modal" data-target="#Work">
 						  <a class="ionoconsColor" href="#"><small class="lead">Trabaja con nosotros</small></a> <br>
 						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLongTitle2">BITONO</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true">&times;</span>
-								</button>
-							  </div>
-							  <div class="modal-body">
-								<div>
-									
-										<form class="form-horizontal" method="post">
-											<fieldset>
-												<legend class="text-center header ionoconsColor">Contact us</legend>
-
-												<div class="form-group">
-
-													<div class="col-md-12">
-														<input id="fname1" name="name" type="text" placeholder="First Name" class="form-control">
-													</div>
-												</div>
-												<div class="form-group">
-
-													<div class="col-md-12">
-														<input id="lname1" name="name" type="text" placeholder="Last Name" class="form-control">
-													</div>
-												</div>
-
-												<div class="form-group">
-
-													<div class="col-md-12">
-														<input id="email1" name="email" type="text" placeholder="Email Address" class="form-control">
-													</div>
-												</div>
-
-												<div class="form-group">
-
-													<div class="col-md-12">
-														<input id="phone1" name="phone" type="text" placeholder="Phone" class="form-control">
-													</div>
-												</div>
-
-												<div class="form-group">
-
-													<div class="col-md-12 mw-100">
-														<textarea class="form-control" id="message1" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-													</div>
-												</div>
-											</fieldset>
-										</form>
-												
-								  </div>
-							  </div>
-							  <div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 						
-							  </div>
-							</div>
-						  </div>
-						</div>
 					</div>
-					
+					<!-- Button trigger modal -->
 					<div>
-						<button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong2">
+						<button type="button" class="btn" data-toggle="modal" data-target="#politics">
 						  <a class="ionoconsColor" href="#"><small class="lead">Nuestras politicas</small></a> <br>
 						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLongTitle3">BITONO</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								  <span aria-hidden="true">&times;</span>
-								</button>
-							  </div>
-							  <div class="modal-body">
-								<div >
-									<h2>nuestras politicas</h2>
-									<h5>POLÍTICA MEDIOAMBIENTAL</h5>
-									<p>
-									A través de su modelo de negocio, BITONO quiere ayudar al desarrollo sostenible de la sociedad y el entorno con el que interactúa.
-
-									Estos son algunos de los objetivos y acciones desarrolladas en el marco del compromiso medioambiental, directamente asociadas a las tiendas y al cliente:
-
-									Ahorramos energía.
-									La tienda ecoeficiente.
-									Reducimos la producción de residuos y reciclamos.
-									Compartimos el compromiso con toda la plantilla.
-									Un equipo sensibilizado.
-									AHORRAMOS ENERGÍA. LA TIENDA ECOEFICIENTE.
-									no contamos con tiendas fisicas .
-									Reducimos la producción de residuos y reciclamos. El reciclaje textil de forma adecuada
-									COMPARTIMOS EL COMPROMISO CON TODA LA PLANTILLA.
-									Un equipo sensibilizado.Campañas de comunicación interna y planes específicos de formación multimedia para sensibilizar a los empleados en las prácticas sostenibles como racionalizar el consumo de energía, practicar el transporte sostenible o modificar hábitos de conducta.</p>
-									
-									<h5>CON EL PRODUCTO</h5>
-
-									<p>
-									Incorporamos tejidos ecológicos.
-									El algodón orgánico.
-									Fabricamos calzado sin PVC.
-									Incorporamos tejidos ecológicos. El algodón orgánico.
-
-									BITONO apoya la agricultura ecológica y utiliza en la confección de prendas seleccionadas algodón orgánico (algodón 100%, totalmente libres de pesticidas, agentes químicos y blanqueantes). Encontrarlas en la tienda será fácil, ya que llevan una etiqueta distintiva.
-									</p>
-									
-									<h5>POLÍTICA DE TRATO A LOS ANIMALES</h5>
-
-									<p>
-									Todos los productos de origen animal, incluidas pieles y cueros, comercializados en nuestras tiendas proceden exclusivamente de animales criados en granjas para la alimentación y en ningún caso, de animales sacrificados exclusivamente para la venta de sus pieles. </p>
-									
-								</div>
-							  </div>
-							  <div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							  </div>
-							</div>
-						  </div>
-						</div>
 					</div>
-					
-					
-				</div><br>
+				</div>
+
+				<br>
 				
 		
 				 <!-- social network -->
@@ -517,6 +447,8 @@
 					<a href="#"><ion-icon class="px-2 lead ionoconsColor" name="logo-whatsapp"></ion-icon></a>
 				</div>
 			</div>
+
+			
 			
 			 <!-- small uso privacidad cookies  -->
 			<div class="row text-center pt-5">
@@ -535,7 +467,152 @@
 				</div>
 			</div>
 		</div>
+		
 	</section>
+	<!-- Modal -->
+	<div class="modal fade" id="who" tabindex="-1" role="dialog" aria-labelledby="whoTitle4" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="whoTitle4">BITONO</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <h2>Somos Bitono</h2>
+				  <p> Empresa de manufactura para prendas deportivas, el resultado de combinar la habilidad con las 
+				  artes textiles, la pasion por el deporte y la buena moda.
+
+				  Sabemos como refrescar el ritmo que llevas  a dirario, y que no paras por nada, por eso te damos los mejores colores en la mejor calidad  y  diseño de prendas.
+				  </p>
+				<h5>para alguien que vive cada segundo al limite.</h5>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="Work" tabindex="-1" role="dialog" aria-labelledby="workTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="workTitle2">BITONO</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <div>
+				  
+					  <form class="form-horizontal" method="post">
+						  <fieldset>
+							  <legend class="text-center header ionoconsColor">Contact us</legend>
+
+							  <div class="form-group">
+
+								  <div class="col-md-12">
+									  <input id="fname1" name="name" type="text" placeholder="First Name" class="form-control">
+								  </div>
+							  </div>
+							  <div class="form-group">
+
+								  <div class="col-md-12">
+									  <input id="lname1" name="name" type="text" placeholder="Last Name" class="form-control">
+								  </div>
+							  </div>
+
+							  <div class="form-group">
+
+								  <div class="col-md-12">
+									  <input id="email1" name="email" type="text" placeholder="Email Address" class="form-control">
+								  </div>
+							  </div>
+
+							  <div class="form-group">
+
+								  <div class="col-md-12">
+									  <input id="phone1" name="phone" type="text" placeholder="Phone" class="form-control">
+								  </div>
+							  </div>
+
+							  <div class="form-group">
+
+								  <div class="col-md-12 mw-100">
+									  <textarea class="form-control" id="message1" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+								  </div>
+							  </div>
+						  </fieldset>
+					  </form>
+							  
+				</div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	  
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="politics" tabindex="-1" role="dialog" aria-labelledby="politicsTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="politicsTitle3">BITONO</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <div >
+				  <h2>nuestras politicas</h2>
+				  <h5>POLÍTICA MEDIOAMBIENTAL</h5>
+				  <p>
+				  A través de su modelo de negocio, BITONO quiere ayudar al desarrollo sostenible de la sociedad y el entorno con el que interactúa.
+
+				  Estos son algunos de los objetivos y acciones desarrolladas en el marco del compromiso medioambiental, directamente asociadas a las tiendas y al cliente:
+
+				  Ahorramos energía.
+				  La tienda ecoeficiente.
+				  Reducimos la producción de residuos y reciclamos.
+				  Compartimos el compromiso con toda la plantilla.
+				  Un equipo sensibilizado.
+				  AHORRAMOS ENERGÍA. LA TIENDA ECOEFICIENTE.
+				  no contamos con tiendas fisicas .
+				  Reducimos la producción de residuos y reciclamos. El reciclaje textil de forma adecuada
+				  COMPARTIMOS EL COMPROMISO CON TODA LA PLANTILLA.
+				  Un equipo sensibilizado.Campañas de comunicación interna y planes específicos de formación multimedia para sensibilizar a los empleados en las prácticas sostenibles como racionalizar el consumo de energía, practicar el transporte sostenible o modificar hábitos de conducta.</p>
+				  
+				  <h5>CON EL PRODUCTO</h5>
+
+				  <p>
+				  Incorporamos tejidos ecológicos.
+				  El algodón orgánico.
+				  Fabricamos calzado sin PVC.
+				  Incorporamos tejidos ecológicos. El algodón orgánico.
+
+				  BITONO apoya la agricultura ecológica y utiliza en la confección de prendas seleccionadas algodón orgánico (algodón 100%, totalmente libres de pesticidas, agentes químicos y blanqueantes). Encontrarlas en la tienda será fácil, ya que llevan una etiqueta distintiva.
+				  </p>
+				  
+				  <h5>POLÍTICA DE TRATO A LOS ANIMALES</h5>
+
+				  <p>
+				  Todos los productos de origen animal, incluidas pieles y cueros, comercializados en nuestras tiendas proceden exclusivamente de animales criados en granjas para la alimentación y en ningún caso, de animales sacrificados exclusivamente para la venta de sus pieles. </p>
+				  
+			  </div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
+	</div>
   	 	
 
 
@@ -548,5 +625,34 @@
 	  <script src="js/main.js" type="text/javascript"></script>
 	  <script src="https://unpkg.com/scrollreveal"></script>
 	  <script src="js/scrollreveal.js"></script>
+	  <script>
+		function entrar(){
+		   
+			 var usuario = $("#usuario").val();
+			 var password = $("#password").val();
+		   
+			   if(usuario == "admin"){
+		   
+		   
+			swal({   title: "Bienvenido",   
+			text: "Ahora puede usted comprar lo que quiera",
+			type: "success",	   
+			html: true},
+			   function(isConfirm){   
+				if (isConfirm) { 
+					usuario = "";
+					password = "";
+					 window.location="index.html"; 
+				} 
+		})
+			   }else if(usuario != "admin"){
+				   usuario = "";
+				   password = "";
+				   swal("Error", "usuario o contraseña equivaca, pruebe nuevamente", "error");
+				   
+			   }
+	   }
+	 
+	</script>
   </body>
 </html>
